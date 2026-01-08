@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Paris 2025</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>Paris 2025</h1>
+        <p>A magical city and first solo-ish trip!</p>
+    </header>
+
+    <section class="card">
+        <h2>Disclaimers</h2>
+        <ul class="text-list">
+            What better way to capture a city old and new than to write an old-fashioned travel diary through the new(?)-fashioned blog post?</br>
+            And of course, its not me if I dont spend 10 days making the most basic website when I could've spent 10 minutes uploading the photos to Google Photos!</br></br>
+            So, that said, enjoy Paris through my eyes (and lens)!,
+        </ul>
+    </section>
+
+    <section class="card">
+        <h2>Day 1</h2>
+        <ul class="text-list">
+            The trip started at 7am with shoving everything into my pockets and hoping I dont get pickpocketed in this seemingly scary city, thanks to everyone's warnings. After getting the metro pass, I found myself in the instagram famous metro line 6, on my way to Orsay. A spontaneous pit stop at an instagram-famous 'underrated' Eiffel photo spot seemed like the best way to start the trip. After a bit of walking around, I finally saw the sunrise at Eiffel and it was soo beautiful. With some new found enhusiasm and appreciation for the american girlies on instagram, I went to a fancy-ish place and got scoffed at for not getting a coffee to go with my pain au chocolat. 
+            After a much needed 'freshen-up' at Orsay, I headed to the Arc de Triomphe and climbed the insanely tall stairs to the top. Clear skies did a favour and I was blessed with a good view of the city. Spotted the iconic LV store that looks like the bag and a 100 other luxury brands that I can't remember, I made a quick stop for an eclair and headed to Sacré-Cœur, a beautiful church on top of a hill with an excellent view of the city. Grabbed a nutella crepe and headed to the church, and then to Montmartre, a cute artsy neighbourhood nearby. Copilot thinks my day ended here lol. Little does it know, dumb ai. 
+            Anyways, after wandering around Montmartre it was time to head to the Louis Vitton Foundation, which happened to be free of cost for students on that day. Pretty regular art exhibits - should've realised its not about fashion before deciding to go. Nevertheless, picked up chocolate mousse at Chapon after and headed to arguably the most important event in the entire trip. This deserves its own section, so, see you there!
+        </ul>
+    </section>
+
+    <section class="card">
+        <h2>📸 Photos</h2>
+        <div class="photo-grid">
+            {% for photo in range(24) %}
+                <img src="/static/photos/photos11/{{ photo }}.jpg" alt="memory photo">
+            {% endfor %}
+        </div>
+    </section>
+
+
+    <section class="card">
+        <h2>Ballet - Notre-Dame de Paris, at the Opera Bastille</h2>
+        <ul class="text-list">
+            After a hurried outfit change at the Louis Vitton bathroom, and almost missing my show because I wanted to have some chocolate, I finally made it to the Opera Bastille, the new Opera house in Paris. Quickly realised there was no need for me to change into my 'fancy' clothes. Was a good photo-op though. Anyways, the Ballet was one of the most breathtaking performances I've ever seen. Definitely the highlight of the trip, and a highlight for the semex too (at least so far). The story is based on a musical which is adapted from the book Notre-Dame de Paris by Victor Hugo (<a href = 'https://en.wikipedia.org/wiki/Notre-Dame_de_Paris_(musical)'>More here</a>). It gave me literal goosebumps to see the live orchestra performing and how they conveyed the story without using a single word. The ballet was another level altogether, made me miss being on stage. The 5 min non stop applause at the end was well deserved. After a satisfactory 1st day, headed back to Orsay.
+        </ul>
+    </section>
+
+    <section class="card">
+        <h2>📸 Photos</h2>
+        <div class="photo-grid">
+            {% for photo in range(6) %}
+                <img src="/static/photos/photos12/{{ photo }}.jpg" alt="memory photo">
+            {% endfor %}
+        </div>
+    </section>
+
+
+    <section class="card">
+        <h2>🎥 Day 1 Videos</h2>
+        <div class="video-grid">
+            {% for video in range(7) %}
+                <video width="320" height="240" controls muted>
+                    <source src="/static/videos/videos1/{{ video }}.mp4" type="video/mp4">
+                </video>
+            {% endfor %}
+        </div>
+    </section>
+
+
+    <section class="card">
+        <h2>Day 2</h2>
+        <ul class="text-list">
+            Fairly boring day - headed to the Versailles palace - pretty crazy that this place was built almost 2000 years ago. Walked around and had to read lot of history (insane 9th std flashbacks). Grabbed a croissant and headed to Notre Dame after. The church was undergoing renovations and I didn't feel like going in - so went to an old apothekary turned bookstore instead (the Instagram girlies did not disappoint again). Beautiful place, had a no photos policy, though. Sat there a couple hours and headed to see the Pantheon. Grabbed (a lowkey bad) hot chocolate and picked up some French butter from the grocery store on the way (let's see if its worth the hype). Saw the tombs of famous French people like Victor Hugo and such, and an art exhibition on equality? fraternity? something like that, and headed to Eiffel. Walked around the Eiffel tower and the Seine river. Checked out the Christmas markets near the Tower and saw this aesthetic Harry Potter stall. Saw the Tower sparkle and headed out for dinner. Found a vegan place and tried vegan meat for the first time. Was a different experience for sure, but the cheesecake was the highlight of the meal. Headed to Tuileries christmas market, saw some cool rides and headed back to Orsay.
+        </ul>
+    </section>
+
+
+    <section class="card">
+        <h2>📸 Photos</h2>
+        <div class="photo-grid">
+            {% for photo in range(30) %}
+                <img src="/static/photos/photos2/{{ photo }}.jpg" alt="memory photo">
+            {% endfor %}
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>Day 3</h2>
+        <ul class="text-list">
+            Day 3 started pretty late - Headed to Opera Garnier, only to find no tours available for the day. Spent some time wandering in Galleries Lafayette, a luxury mall and headed to petit palais. Beautiful artwork, really interesting sculptures and a lot of historical objects, definitely one of the more underrated muesums. Headed to Musee d'Orsay and did a quick 'u-turn' after seeing the queue. Same at the Louvre, which was supposed to be closed, but was somehow open? Did darshan of the Louvre pyramid and headed to the National Library of France. My only regret of the trip - should've spent more time here. It was the biggest room of books I've ever seen and every single thing about it was breathtaking. A lot of stuff I didn't see. Will set aside an entire day here if I find myself in Paris again. Had to rush out when I realised I hadnt actually booked my ticket back to Karlsruhe and it was too late to do it online. Ran around for a long time in the station and finally spoke in extremely broken German French and English to the train manager and got into the train 5 minutes before it departed. Alas, all is well, as was this trip. Made it back to room in time for dinner and fell asleep dreaming of the ballet and the books
+        </ul>
+    </section>
+
+
+    <section class="card">
+        <h2>📸 Photos</h2>
+        <div class="photo-grid">
+            {% for photo in range(18) %}
+                <img src="/static/photos/photos3/{{ photo }}.jpg" alt="memory photo">
+            {% endfor %}
+        </div>
+    </section>
+
+
+    <section class="card">
+        <h2>🎥 Day 2 and 3 Videos</h2>
+        <div class="video-grid">
+            {% for video in range(3)%}
+                <video width="320" height="240" controls muted>
+                    <source src="/static/videos/videos3/{{ video }}.mp4" type="video/mp4">
+                </video>
+            {% endfor %}
+        </div>
+    </section>
+
+
+    <section class="card">
+        <h2>The yapping ends here</h2>
+        <ul class="text-list">
+            Overall, a great solo trip. Would've been nice to have someone take my pictures, but in any case, a magical city, in spite of the piss smell and the pickpocketers and the scammers. Moral: listen to the girlies on Instagram. Paris - 10/10 would recommend.
+        </ul>
+    </section>
+
+
+    <footer>
+        <p>The videos don't get embedded along with the photos for some reason, pardon me for I am not SDE enough to fix it. (Click on the photos/videos to view them in full screen)</p>
+    </footer>
+
+    <!-- Fullscreen Photo Modal -->
+    <div id="photoModal" class="photo-modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modalImage" src="" alt="">
+    </div>
+
+    <!-- Fullscreen Video Modal -->
+    <div id="videoModal" class="photo-modal">
+        <span class="modal-close">&times;</span>
+        <video class="modal-content" id="modalVideo" controls>
+            <source src="" type="video/mp4">
+        </video>
+    </div>
+
+    <script>
+        const photoModal = document.getElementById('photoModal');
+        const videoModal = document.getElementById('videoModal');
+        const modalImg = document.getElementById('modalImage');
+        const modalVid = document.getElementById('modalVideo');
+        const closeButtons = document.querySelectorAll('.modal-close');
+        const photoImages = document.querySelectorAll('.photo-grid img');
+        const videoElements = document.querySelectorAll('.video-grid video');
+
+        // Open photo modal when image is clicked
+        photoImages.forEach(img => {
+            img.addEventListener('click', function() {
+                photoModal.classList.add('active');
+                modalImg.src = this.src;
+                modalImg.alt = this.alt;
+            });
+        });
+
+        // Open video modal when video is clicked
+        videoElements.forEach(vid => {
+            vid.addEventListener('click', function() {
+                videoModal.classList.add('active');
+                const source = this.querySelector('source');
+                modalVid.querySelector('source').src = source.src;
+                modalVid.load();
+                modalVid.play();
+            });
+        });
+
+        // Close modals when X is clicked
+        closeButtons.forEach(btn => {
+            btn.addEventListener('click', function() {
+                photoModal.classList.remove('active');
+                videoModal.classList.remove('active');
+                modalVid.pause();
+            });
+        });
+
+        // Close modals when background is clicked
+        [photoModal, videoModal].forEach(modal => {
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    photoModal.classList.remove('active');
+                    videoModal.classList.remove('active');
+                    modalVid.pause();
+                }
+            });
+        });
+
+        // Close modals on Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                photoModal.classList.remove('active');
+                videoModal.classList.remove('active');
+                modalVid.pause();
+            }
+        });
+    </script>
+
+</body>
+</html>
