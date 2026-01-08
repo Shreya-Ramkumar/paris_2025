@@ -16,9 +16,9 @@
     <section class="card">
         <h2>Disclaimers</h2>
         <ul class="text-list">
-            {% for text in texts %}
-                <li>{{ text }}</li>
-            {% endfor %}
+            What better way to capture a city old and new than to write an old-fashioned travel diary through the new(?)-fashioned blog post?</br>
+            And of course, its not me if I dont spend 10 days making the most basic website when I could've spent 10 minutes uploading the photos to Google Photos!</br></br>
+            So, that said, enjoy Paris through my eyes (and lens)!,
         </ul>
     </section>
 
@@ -34,8 +34,8 @@
     <section class="card">
         <h2>📸 Photos</h2>
         <div class="photo-grid">
-            {% for photo in photos11 %}
-                <img src="/static/photos/photos11/{{ photo }}" alt="memory photo">
+            {% for photo in range(24) %}
+                <img src="/static/photos/photos11/{{ photo }}.jpg" alt="memory photo">
             {% endfor %}
         </div>
     </section>
@@ -51,8 +51,8 @@
     <section class="card">
         <h2>📸 Photos</h2>
         <div class="photo-grid">
-            {% for photo in photos12 %}
-                <img src="/static/photos/photos12/{{ photo }}" alt="memory photo">
+            {% for photo in range(6) %}
+                <img src="/static/photos/photos12/{{ photo }}.jpg" alt="memory photo">
             {% endfor %}
         </div>
     </section>
@@ -61,9 +61,9 @@
     <section class="card">
         <h2>🎥 Day 1 Videos</h2>
         <div class="video-grid">
-            {% for video in videos1 %}
+            {% for video in range(7) %}
                 <video width="320" height="240" controls muted>
-                    <source src="/static/videos/videos1/{{ video }}" type="video/mp4">
+                    <source src="/static/videos/videos1/{{ video }}.mp4" type="video/mp4">
                 </video>
             {% endfor %}
         </div>
@@ -81,8 +81,8 @@
     <section class="card">
         <h2>📸 Photos</h2>
         <div class="photo-grid">
-            {% for photo in photos2 %}
-                <img src="/static/photos/photos2/{{ photo }}" alt="memory photo">
+            {% for photo in range(30) %}
+                <img src="/static/photos/photos2/{{ photo }}.jpg" alt="memory photo">
             {% endfor %}
         </div>
     </section>
@@ -98,8 +98,8 @@
     <section class="card">
         <h2>📸 Photos</h2>
         <div class="photo-grid">
-            {% for photo in photos3 %}
-                <img src="/static/photos/photos3/{{ photo }}" alt="memory photo">
+            {% for photo in range(18) %}
+                <img src="/static/photos/photos3/{{ photo }}.jpg" alt="memory photo">
             {% endfor %}
         </div>
     </section>
@@ -108,9 +108,9 @@
     <section class="card">
         <h2>🎥 Day 2 and 3 Videos</h2>
         <div class="video-grid">
-            {% for video in videos2 %}
+            {% for video in range(3)%}
                 <video width="320" height="240" controls muted>
-                    <source src="/static/videos/videos2/{{ video }}" type="video/mp4">
+                    <source src="/static/videos/videos3/{{ video }}.mp4" type="video/mp4">
                 </video>
             {% endfor %}
         </div>
