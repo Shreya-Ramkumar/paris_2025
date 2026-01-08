@@ -1,0 +1,222 @@
+:root {
+    /* 🌈 THEME COLORS (edit these) */
+    --card-bg: #eccdcd;
+    --text-main: #2f2f2f;
+    --text-muted: #777;
+    --soft-bg: #eccdcd;
+    --primary: #c43f4a;
+    --secondary: #ffd6a5;
+    --bg-gradient: linear-gradient(135deg, #e4aacc, #e0f2fe);
+
+}
+
+/* Reset */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: var(--bg-gradient);
+    color: var(--text-main);
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 60px 20px 40px;
+}
+
+header h1 {
+    font-size: 2.6rem;
+    margin-bottom: 10px;
+    color: var(--primary);
+}
+
+header p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--text-muted);
+}
+
+/* Cards */
+.card {
+    background: var(--card-bg);
+    max-width: 1000px;
+    margin: 25px auto;
+    padding: 25px;
+    border-radius: 22px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Section titles */
+.card h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Text posts */
+.text-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.text-list li {
+    background: var(--soft-bg);
+    padding: 16px 18px;
+    margin-bottom: 12px;
+    border-radius: 14px;
+    line-height: 1.4;
+}
+
+/* Photos */
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 12px;
+}
+
+.photo-grid img {
+    width: 100%;
+    border-radius: 18px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.photo-grid img:hover {
+    transform: scale(1.04);
+    box-shadow: 0 10px 22px rgba(0,0,0,0.15);
+}
+
+/* Videos */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 12px;
+}
+
+video {
+    width: 100%;
+    border-radius: 18px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+video:hover {
+    transform: scale(1.04);
+    box-shadow: 0 10px 22px rgba(0,0,0,0.15);
+}
+
+/* Photo Modal */
+.photo-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    animation: fadeIn 0.3s ease;
+}
+
+.photo-modal.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 8px;
+    animation: zoomIn 0.3s ease;
+}
+
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    transition: color 0.2s ease;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+    color: #bbb;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+/* 📱 MOBILE OPTIMIZATION */
+@media (max-width: 768px) {
+
+    header {
+        padding: 40px 16px 30px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .card {
+        margin: 18px 12px;
+        padding: 20px;
+    }
+
+    .card h2 {
+        font-size: 1.2rem;
+    }
+
+    .photo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer {
+        font-size: 0.85rem;
+    }
+}
+
+/* 💻 LARGE SCREENS */
+@media (min-width: 1100px) {
+    header h1 {
+        font-size: 3rem;
+    }
+}
