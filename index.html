@@ -108,11 +108,18 @@
     <section class="card">
         <h2>🎥 Day 2 and 3 Videos</h2>
         <div class="video-grid">
-            {% for video in range(3)%}
-                <video width="320" height="240" controls muted>
-                    <source src="root/videos/videos3/{{ video }}.mp4" type="video/mp4">
-                </video>
-            {% endfor %}
+            <div id="videos"></div>
+                <script>
+                  let html = "";
+                  for (let i = 0; i < 3; i++) {
+                    html += `
+                      <video width="320" height="240" controls muted>
+                        <source src="static/videos/videos3/${i}.mp4" type="video/mp4">
+                      </video>
+                    `;
+                  }
+                  document.getElementById("videos").innerHTML = html;
+                </script>
         </div>
     </section>
 
@@ -204,6 +211,7 @@
 
 </body>
 </html>
+
 
 
 
