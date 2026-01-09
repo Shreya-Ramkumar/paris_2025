@@ -1,0 +1,6 @@
+# Ignore all directories named "photos" anywhere in the repository
+**/photos/
+
+# Also explicitly ignore common photo folders
+/static/photos/
+/root/photos/
